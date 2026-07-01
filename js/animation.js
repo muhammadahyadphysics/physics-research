@@ -1,0 +1,1 @@
+document.querySelectorAll('.fade').forEach(e=>e.classList.add('show'));
