@@ -1,0 +1,1 @@
+document.querySelectorAll(".nav-link").forEach(a=>a.addEventListener("click",()=>console.log("Navigate")));
