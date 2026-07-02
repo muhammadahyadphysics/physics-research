@@ -1,1 +1,98 @@
-<html><body><h1>Article</h1></body></html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artikel — Nama Anda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Nama Anda
+      <span>Kandidat Doktor, Fisika</span>
+    </a>
+    <button class="nav-toggle" aria-label="Buka menu">☰</button>
+    <nav class="main-nav">
+      <a href="index.html">Beranda</a>
+      <a href="research.html">Riset</a>
+      <a href="teaching.html">Pengajaran</a>
+      <a href="articles.html">Artikel</a>
+      <a href="publications.html">Publikasi</a>
+      <a href="videos.html">Video</a>
+      <a href="contact.html">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Artikel</p>
+      <h1>Catatan riset &amp; kelas</h1>
+      <p class="lede">
+        Tulisan pendek seputar fisika material kuantum, optik nonlinier,
+        dan pengalaman mengajar. Ditulis untuk pembaca yang penasaran,
+        bukan hanya sesama fisikawan.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="grid grid-3">
+        <div class="card">
+          <p class="eyebrow">Riset · 2 Juli 2026</p>
+          <h3>Mengenal Pembangkitan Harmonik Kedua</h3>
+          <p>Pengantar intuitif tentang bagaimana material tak-tersentris menghasilkan cahaya pada frekuensi ganda.</p>
+          <a class="card-link" href="articles/contoh-artikel-shg.html">Baca artikel →</a>
+        </div>
+        <div class="card">
+          <p class="eyebrow">Pengajaran · 20 Juni 2026</p>
+          <h3>Menjelaskan Superposisi ke Mahasiswa Tahun Pertama</h3>
+          <p>Beberapa analogi yang saya pakai di kelas agar konsep superposisi kuantum terasa masuk akal.</p>
+          <a class="card-link" href="articles/contoh-artikel-mengajar.html">Baca artikel →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <p class="eyebrow">Panduan</p>
+      <h2>Cara menambah artikel baru</h2>
+      <p class="lede">
+        Situs ini tidak memakai CMS &mdash; setiap artikel adalah satu
+        berkas HTML biasa, supaya bisa langsung di-hosting di GitHub Pages
+        tanpa proses build.
+      </p>
+      <ol>
+        <li>Salin berkas <code>articles/template-artikel.html</code>, ganti nama sesuai judul artikel (mis. <code>articles/nama-artikel-baru.html</code>).</li>
+        <li>Ubah judul, tanggal, dan isi tulisan di dalam berkas tersebut.</li>
+        <li>Tambahkan satu kartu baru di halaman ini (<code>articles.html</code>) yang menaut ke berkas artikel tersebut.</li>
+        <li><em>Commit</em> dan <em>push</em> ke repository GitHub Anda &mdash; artikel otomatis tayang di GitHub Pages.</li>
+      </ol>
+      <a class="btn btn-primary" href="articles/template-artikel.html">Buka template artikel →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Nama Anda. Dibuat dengan HTML &amp; CSS murni untuk GitHub Pages.</p>
+    <div class="social-links">
+      <a href="mailto:nama@email.ac.id">Email</a>
+      <a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
