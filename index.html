@@ -1,65 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ahyad | Research Portfolio</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<title>Nama Anda — Fisika Material Kuantum &amp; Optik Nonlinier</title>
+<meta name="description" content="Situs pribadi akademik: riset material kuantum dan optik nonlinier, pengajaran fisika, artikel, publikasi, dan video.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-<div class="container">
-<a class="navbar-brand" href="#">Ahyad Research</a>
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
-<div class="collapse navbar-collapse" id="nav">
-<ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-<li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-</ul></div></div></nav>
 
-<header class="hero text-center">
-<div class="container">
-<h1>Ahyad</h1>
-<p class="lead">Physics Research Portfolio</p>
-<p>Quantum Materials • Berry Curvature • Topological Physics • Nonlinear Optics</p>
-<a class="btn btn-primary m-2" href="#research">Explore Research</a>
-<a class="btn btn-outline-light m-2" href="#">Download CV</a>
-</div>
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Nama Anda
+      <span>Kandidat Doktor, Fisika</span>
+    </a>
+    <button class="nav-toggle" aria-label="Buka menu">☰</button>
+    <nav class="main-nav">
+      <a href="index.html">Beranda</a>
+      <a href="research.html">Riset</a>
+      <a href="teaching.html">Pengajaran</a>
+      <a href="articles.html">Artikel</a>
+      <a href="publications.html">Publikasi</a>
+      <a href="videos.html">Video</a>
+      <a href="contact.html">Kontak</a>
+    </nav>
+  </div>
 </header>
 
-<section id="about" class="container py-5">
-<h2>About</h2>
-<p>Welcome to my personal research portfolio. This website will document my research notes, codes, publications and computational materials science projects.</p>
-</section>
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Fisika &mdash; Material Kuantum &amp; Optik Nonlinier</p>
+        <h1>Menjelajahi cahaya dan materi pada skala kuantum.</h1>
+        <p class="lede">
+          Saya kandidat doktor (S3) Fisika yang meneliti material kuantum dan
+          fenomena optik nonlinier, sambil mengajar fisika dasar dan lanjut.
+          Situs ini adalah ruang berbagi riset, catatan kuliah, artikel,
+          publikasi, dan dokumentasi video.
+        </p>
+        <div class="hero-tags">
+          <span class="tag">Material Kuantum</span>
+          <span class="tag">Optik Nonlinier</span>
+          <span class="tag">Fisika Zat Padat</span>
+          <span class="tag">Pengajaran Fisika</span>
+        </div>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="research.html">Lihat Riset →</a>
+          <a class="btn btn-ghost" href="articles.html">Baca Artikel</a>
+        </div>
+      </div>
 
-<section id="research" class="bg-light py-5">
-<div class="container">
-<h2 class="mb-4">Research Areas</h2>
-<div class="row g-4">
-<div class="col-md-4"><div class="card h-100 shadow-sm"><div class="card-body"><h5>Berry Curvature</h5><p>Topological transport and anomalous responses.</p></div></div></div>
-<div class="col-md-4"><div class="card h-100 shadow-sm"><div class="card-body"><h5>Quantum Geometry</h5><p>Quantum metric and geometric effects.</p></div></div></div>
-<div class="col-md-4"><div class="card h-100 shadow-sm"><div class="card-body"><h5>Nonlinear Optics</h5><p>SHG, THG, Shift and Injection Current.</p></div></div></div>
-</div>
-</div>
-</section>
+      <div class="spectrum-panel" aria-hidden="true">
+        <div class="row"><span>PUMP</span><span>λ = 800 nm</span></div>
+        <div class="spectrum-bar"></div>
+        <div class="row"><span>SHG OUTPUT</span><span>λ/2 = 400 nm</span></div>
+        <p class="caption">
+          Konversi frekuensi harmonik-kedua (SHG): dua foton inframerah
+          bergabung menjadi satu foton tampak berenergi ganda &mdash; salah satu
+          proses inti dalam riset optik nonlinier saya.
+        </p>
+      </div>
+    </div>
+  </section>
 
-<section id="projects" class="container py-5">
-<h2>Featured Projects</h2>
-<div class="row g-4">
-<div class="col-md-6"><div class="card project-card"><div class="card-body"><h4>Quantum ESPRESSO Workflow</h4><p>DFT calculations for topological materials.</p></div></div></div>
-<div class="col-md-6"><div class="card project-card"><div class="card-body"><h4>Yambo Optical Response</h4><p>Optical conductivity and excitonic calculations.</p></div></div></div>
-</div>
-</section>
+  <section class="alt">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Fokus Riset</p>
+          <h2>Dua sisi dari satu pertanyaan</h2>
+        </div>
+        <a class="card-link" href="research.html">Semua riset →</a>
+      </div>
+      <div class="grid grid-2">
+        <div class="card quantum">
+          <p class="eyebrow" style="color:var(--quantum)">01 — Material Kuantum</p>
+          <h3>Fase elektronik terkorelasi</h3>
+          <p>
+            Mempelajari material dengan interaksi elektron-elektron kuat,
+            termasuk transisi fase, superkonduktivitas, dan sifat topologis
+            yang muncul pada suhu rendah.
+          </p>
+          <a class="card-link" href="research.html#quantum">Selengkapnya →</a>
+        </div>
+        <div class="card optics">
+          <p class="eyebrow" style="color:var(--shg)">02 — Optik Nonlinier</p>
+          <h3>Interaksi cahaya-materi intensitas tinggi</h3>
+          <p>
+            Meneliti respons nonlinier material terhadap medan laser kuat:
+            pembangkitan harmonik, pencampuran empat-gelombang, dan
+            spektroskopi ultracepat.
+          </p>
+          <a class="card-link" href="research.html#optics">Selengkapnya →</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer id="contact" class="bg-dark text-white text-center py-4">
-<p>© 2026 Ahyad Research Portfolio</p>
-<p>Email | GitHub | Google Scholar | ORCID</p>
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Tulisan Terbaru</p>
+          <h2>Dari catatan riset dan kelas</h2>
+        </div>
+        <a class="card-link" href="articles.html">Semua artikel →</a>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <p class="eyebrow">Riset</p>
+          <h3>Mengenal Pembangkitan Harmonik Kedua</h3>
+          <p>Pengantar intuitif tentang bagaimana material tak-tersentris menghasilkan cahaya pada frekuensi ganda.</p>
+          <a class="card-link" href="articles/contoh-artikel-shg.html">Baca artikel →</a>
+        </div>
+        <div class="card">
+          <p class="eyebrow">Pengajaran</p>
+          <h3>Menjelaskan Superposisi ke Mahasiswa Tahun Pertama</h3>
+          <p>Beberapa analogi yang saya pakai di kelas agar konsep superposisi kuantum terasa masuk akal.</p>
+          <a class="card-link" href="articles/contoh-artikel-mengajar.html">Baca artikel →</a>
+        </div>
+        <div class="card">
+          <p class="eyebrow">Catatan</p>
+          <h3>Template artikel baru</h3>
+          <p>Salin <code>articles/template-artikel.html</code> untuk menambah tulisan baru dengan cepat.</p>
+          <a class="card-link" href="articles.html">Lihat panduan →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container two-col">
+      <div>
+        <p class="eyebrow">Publikasi &amp; Dokumen</p>
+        <h2>Makalah, CV, dan materi kuliah</h2>
+        <p>Semua dokumen PDF — makalah riset, poster, CV, dan diktat kuliah — terkumpul di satu tempat, siap diunduh.</p>
+        <a class="btn btn-ghost" href="publications.html">Buka daftar publikasi →</a>
+      </div>
+      <div>
+        <p class="eyebrow">Video</p>
+        <h2>Presentasi &amp; rekaman kuliah</h2>
+        <p>Rekaman seminar, presentasi konferensi, dan video penjelasan konsep fisika yang dapat ditonton langsung di situs ini.</p>
+        <a class="btn btn-ghost" href="videos.html">Tonton video →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Nama Anda. Dibuat dengan HTML &amp; CSS murni untuk GitHub Pages.</p>
+    <div class="social-links">
+      <a href="mailto:nama@email.ac.id">Email</a>
+      <a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
-</body></html>
+<script src="assets/js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
